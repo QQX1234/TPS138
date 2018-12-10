@@ -1,0 +1,165 @@
+@charset "utf-8";
+/*新品·热卖·楼梯部分相同样式*/
+
+.img{
+	width: 222px;
+	height: 227px;
+}
+.img0{
+	position:absolute;
+	right:5px;
+	top:5px;
+}
+.img1{
+	position:absolute;
+	right:5px;
+	top: 35px;
+}
+.img3{
+	width: 30px;
+	height: 16px;
+	margin-left: 6px;
+	margin-top:6px;
+}
+
+.span1{
+	width: 160px;
+	height: 14px;
+	display: block;
+	float:left;
+	font-size: 14px;
+	overflow: hidden;
+	margin-left: 6px;
+	margin-top: 6px;
+}
+.span2{
+	width: 40px;
+	height:26px;
+	display: block;
+	float:right;
+}
+
+/*新品·热卖*/
+
+.box{
+	width:222px;
+	height:280px;
+	float:left;
+	margin-right:16px;
+	margin-top:10px;
+	background:#fff;
+	cursor: pointer;
+	position:relative;
+	overflow: hidden;
+}
+.box1{
+		width:222px;
+		height:52px;
+}
+.spanbox{
+	width:222px;
+	height:26px;
+	display:block;
+}
+.span11{
+	width: 160px;
+	height:26px;
+	display: block;
+	float:left;
+	color: red;
+}
+.span21{
+	width: 36px;
+	height: 18px;
+	display: block;
+	float:right;
+	font-size: 14px;
+	margin-left: 12px;
+	margin-top: 8px;
+}
+
+/*楼梯部分商品*/
+			  
+.img2{
+	width: 222px;
+	height: 157px;
+}			
+			  
+.boxx{
+	width:252px;
+	height:215px;
+	float: left;
+	margin-left:26px ;
+	margin-top: 10px;
+	background: #fff;
+	cursor: pointer;
+	position: relative;
+}
+.boxx1{
+	width: 252px;
+	height: 52px;
+}
+.spannbox{
+	width: 252px;
+	height: 26px;
+	display: block;
+}
+.spann11{
+	width: 170px;
+	height: 26px;
+	display: block;
+	float: left;
+	color: red;
+}
+.spann21{
+	width: 28px;
+	height: 18px;
+	display: block;
+	float: right;
+	font-size: 14px;
+	margin-left: 26px;
+	margin-top: 8px;
+}
+/*边框线条动画*/
+.div{
+	width: 2px;
+	height: 2px;
+	position: absolute;
+	display: none;
+}
+.div1{
+	height: 2px;
+	top: 0px;
+	left:0px;
+	border-left: 2px solid #EB5858;
+}
+.div2{
+	width: 0px;
+    bottom:-3px;
+	left: 0px;
+	border-top: 2px solid #EB5858;
+}
+.div22{
+	width: 0px;
+    bottom:-3px;
+	left: 0px;
+	border-top: 3px solid #EB5858;
+}
+.div3{
+	height: 0px;
+    bottom:0px;
+    right:0px;
+	border-right: 2px solid #EB5858;
+}
+.div4{
+	width:0px;
+	top:-3px;
+	right:0px;
+	border-bottom: 2px solid #EB5858;
+}
+.div44{
+	width:0px;
+	top:-3px;
+	right:0px;
+	border-bottom: 3px solid #EB5858;
+}
