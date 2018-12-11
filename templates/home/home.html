@@ -3,17 +3,29 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>PTS138-首页</title>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/public.css' %}"/>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}"/>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/creat.css' %}"/>
+{#		<title>PTS138-首页</title>#}
+        {% block title %}
+            PTS138-首页
+            <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+        {% endblock %}
 
-        <script src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/public.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/new.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/hot.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/commodity.js' %}"></script>
-{#        <script src="{% static 'js/my_zol.js' %}"></script>#}
+        {% block extcss %}
+            <link rel="stylesheet" type="text/css" href="{% static 'css/public.css' %}"/>
+            <link rel="stylesheet" type="text/css" href="{% static 'css/homepage.css' %}"/>
+            <link rel="stylesheet" type="text/css" href="{% static 'css/creat.css' %}"/>
+            <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+        {% endblock %}
+
+        {% block extjs %}
+            <script src="{% static 'js/jquery-3.1.0.min.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/public.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/new.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/hot.js' %}"></script>
+            <script type="text/javascript" src="{% static 'js/commodity.js' %}"></script>
+            <script src="{% static 'js/swiper.min.js' %}"></script>
+            <script src="{% static 'js/home.js' %}"></script>
+        {% endblock %}
+
 	</head>
 	<body>
 
@@ -365,26 +377,34 @@
 				</ul>
 			</div>
 		</div>
-		<div id="banner">
-			<ul id="list1">
+        <div class="swiper-container" id="top-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="{% static 'img/1.jpg' %}" alt=""></div>
+                <div class="swiper-slide"><img src="{% static 'img/2.jpg' %}" alt=""></div>
+                <div class="swiper-slide"><img src="{% static 'img/3.jpg' %}" alt=""></div>
+                <div class="swiper-slide"><img src="{% static 'img/4.jpg' %}" alt=""></div>
+                <div class="swiper-slide"><img src="{% static 'img/5.jpg' %}" alt=""></div>
+                <div class="swiper-slide"><img src="{% static 'img/6.jpg' %}" alt=""></div>
 
-			</ul>
-			<ul id="list2">
-				<li class="active"></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-			<div id="bannerLeft">
-				&lt;
-			</div>
-			<div id="bannerRight">
-				&gt;
-			</div>
-		</div>
-
+{#                <div class="swiper-slide">Slide 8</div>#}
+{#                <div class="swiper-slide">Slide 9</div>#}
+{#                <div class="swiper-slide">Slide 10</div>#}
+{##}
+{#                {% for wheel in wheels %}#}
+{#                    <div class="swiper-slide">#}
+{#                        <img src="{{ Wheel.img }}" alt="">#}
+{##}
+{#                    </div>#}
+{#                {% endfor %}#}
+                
+                
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
 
 		<div id="guarantee">
 			<div id="guaranteeOne" class="guarantee">
@@ -763,36 +783,39 @@
         		</div>
         </div>
 <!--尾部  -->    <!--尾部  --> <!--尾部  --> <!--尾部  --> <!--尾部  -->
-        <div id="footer">
-        	<div id="footer_c">
-        		<div id="footer_c_l">
+        {% block footer %}
+            <div id="footer">
+                <div id="footer_c">
+                    <div id="footer_c_l">
         			<span>Copyright©2014-2016 TPS138.com前海云集品 版权所有.粤ICP备14072989号-2<br>
         			      食品经营许可证：JY14403040013964
         			</span>
-        			<br><br>
-        			<span>深圳前海云集品电子商务有限公司<br>
+                        <br><br>
+                        <span>深圳前海云集品电子商务有限公司<br>
         			      汤普森跨境电子商务平台
         			</span>
-        			<br>
-        			<ul>
-        				<li><a href="#">&gt;关于我们</a></li>
-        				<li><a href="#">&gt;物流配送</a></li>
-        				<li><a href="#">&gt;售后服务</a></li>
-        				<li><a href="#">&gt;帮助中心</a></li>
-        			</ul>
-        		</div>
-        		<div id="footer_c_m">
+                        <br>
+                        <ul>
+                            <li><a href="#">&gt;关于我们</a></li>
+                            <li><a href="#">&gt;物流配送</a></li>
+                            <li><a href="#">&gt;售后服务</a></li>
+                            <li><a href="#">&gt;帮助中心</a></li>
+                        </ul>
+                    </div>
+                    <div id="footer_c_m">
         			<span>联系方式<br>
         			      <br>
-        			      support@tps138.com<br>
+        			      support@tps138.com<br>4
         			      0755-88695066
         			</span>
-        		</div>
-        		<div id="footer_c_r">
-        			<img src="{% static 'img/weixin.jpg' %}" style="width: 160px;height: 160px;">
-        		</div>
-        	</div>
-        </div>
+                    </div>
+                    <div id="footer_c_r">
+                        <img src="{% static 'img/weixin.jpg' %}" style="width: 160px;height: 160px;">
+                    </div>
+                </div>
+            </div>
+
+        {% endblock %}
 
     </body>
 </html>

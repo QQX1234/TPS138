@@ -9,4 +9,4 @@ class Base(models.Model):
 #轮播图
 class Wheel(Base):
     class Meta:
-        db_table = "TPS138_Wheel"
+        db_table = "TPS138_wheel"
