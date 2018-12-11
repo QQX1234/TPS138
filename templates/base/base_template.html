@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <title>
         {% block title %}
-
+            TPS138
         {% endblock %}
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="{% static 'base/css/public.css' %}">
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/creat.css' %}">
+
     {% block extcss %}
 
     {% endblock %}
@@ -20,6 +23,11 @@
 {% endblock %}
 
 <script src="{% static 'base/js/jquery-1.12.0.js' %}"></script>
+<script src="{% static 'base/js/jquery-3.1.0.min.js' %}" ></script>
+<script type="text/javascript" src="{% static 'base/js/public.js' %}" ></script>
+<script type="text/javascript" src="{% static 'base/js/new.js' %}" ></script>
+<script type="text/javascript" src="{% static 'base/js/hot.js' %}" ></script>
+<script type="text/javascript" src="{% static 'base/js/commodity.js' %}" ></script>
 {% block extjs %}
 
 {% endblock %}

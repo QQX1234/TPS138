@@ -1,15 +1,35 @@
 {% load static %}
 {% extends 'base/base_template.html' %}
 
-{% block extcss %}
+{% block extbasecss %}
     <link rel="stylesheet" href="{% static 'base/css/base.css' %}">
-
+    {% block extcss %}
+    
+    {% endblock %}
 {% endblock %}
 
-{% block extjs %}
+{% block extbasejs %}
     <script src="{% static 'base/js/base.js' %}"></script>
+    {% block extjs %}
+    
+    {% endblock %}
 {% endblock %}
 
 {% block body %}
+    {% block header %}
+        <header>TPS138</header>
+    {% endblock %}
+
+    {% block content %}
+
+
+    {% endblock %}
+
+    {% block footer %}
+        <footer>
+            底部
+        </footer>
+
+    {% endblock %}
 
 {% endblock %}

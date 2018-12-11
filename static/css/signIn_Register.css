@@ -1,0 +1,28 @@
+@charset "utf-8";
+#denglu{height: 600px;width:1200px;margin: 0 auto;}
+#dengluTop{height: 40px;width:1200px;border-bottom: 2px solid #868686;margin-top: 40px;margin-bottom: 10px;;line-height: 40px;}
+h2{font-weight: 700;}
+#dengluLeft{width: 550px;height: 530px;border-right: 1px solid #cbcbcb;margin-left: 40px;float: left;position: relative;}
+#dengluLeft .span4{color: #686c6d;font-weight: 700;font-size: 20px;margin-top: 10px;display: block;height: 50px;width: 50px;line-height: 50px;}
+#text{width: 222px;height: 40px;font-size: 16px;padding-left: 48px;background: white;border: 1px solid #cdcdcd;}
+#mail{position: absolute;width: 26px;height: 18px;top: 90px;left: 8px;}
+#password{width: 222px;height: 40px;font-size: 16px;padding-left: 48px;background: white;border: 1px solid #cdcdcd;}
+#pwd{position: absolute;width: 26px;height: 22px;top: 170px;left: 8px;}
+#button{background: red;color: white;font-size: 16px;width:90px;height: 36px;border: none;}
+.de:hover{text-decoration: underline;}
+#dengluRight{width: 570px;height: 530px;margin-left: 30px;float: right;position: relative;}
+#dengluRight .span{color: #686c6d;font-weight: 700;font-size: 20px;margin-top: 10px;display: block;height: 50px;width: 100px;line-height: 50px;}
+#text2{width: 222px;height: 40px;font-size: 16px;padding-left: 48px;}
+.no{width: 26px;height: 26px;display: none;}
+.yes{width: 26px;height: 26px;display: none;}
+#mail2{position: absolute;width: 26px;height: 18px;top: 90px;left: 8px;}
+#prompt11,#prompt22,#prompt1,#prompt,#prompt3{color: red;}
+#password2{width: 222px;height: 40px;font-size: 16px;padding-left: 48px;}
+.no2{width: 26px;height: 26px;display: none;}
+.yes2{width: 26px;height: 26px;display: none;}
+#pwd2{position: absolute;width: 26px;height: 22px;top: 170px;left: 8px;}
+#text3{width: 222px;height: 40px;font-size: 16px;padding-left: 48px;}
+#pwd3{position: absolute;width: 26px;height: 22px;top: 255px;left: 8px;}
+#button2{background: #666666;color: white;font-size: 16px;width:120px;height: 36px;border: none;cursor: pointer;opacity: 0.01;}
+#button3{background: #2d3343;color: white;font-size: 16px;width:120px;height: 36px;border: none;cursor: pointer;}
+

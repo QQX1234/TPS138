@@ -1,0 +1,48 @@
+@charset "utf-8";
+#box{height: 580px;width:1200px;margin: 0 auto;}
+/*商品详情顶部*/
+#boxTop{height: 30px;width:1200px;margin-top: 20px;position: relative;font-size: 14px;}
+#boxTop img{position: relative; top: 5px;}
+#boxTop a{color: black;}
+#boxTop a:hover{color: red;}
+
+#boxContent{height: 510px;width:1200px;background: white;margin-top:10px ;position: relative;}
+#smallPicBox{width: 500px;height: 400px;position: relative;left: 8px;top: 8px;float: left;cursor:move}
+#smallPic{width: 500px;height: 400px;position: absolute;}
+#smallPic2{width: 500px;height: 400px;position: absolute;display: none;}
+#moveDiv{width: 250px;height: 200px;background: yellowgreen;opacity: 0.5;position: absolute;left: 0;top: 0;display: none;}
+#bigPicBox{width: 500px;height: 400px;position: absolute;left: 510px;top: 8px;z-index: 2;overflow: hidden;display: none;}
+#bigPic{width: 1000px;height: 800px;position: absolute;z-index: 2;}
+#bigPic2{width: 1000px;height: 800px;position: absolute;}
+#boxContent_r{width: 600px;height: 400px;float: right;position: relative;top: 8px;left: 50px;position: relative;float: left;}
+.baoyou{background: red;color: white;width: 50px;height: 20px;text-align: center;line-height: 20px;border-radius: 3px;}
+h3{font-weight: 800;}
+.price{font-size: 36px;color: red;font-weight: 900;font-family: "微软雅黑";}
+.guige{width: 550px;height: 120px; position: absolute;left: 50px;top: 210px;}
+.guige ul li{float: left;font-size: 14px;margin-left:8px ;margin-top: 8px;display: block;width: 126px;height: 26px;border: 1px solid #cccccc;text-align: center;line-height: 26px;cursor:pointer}
+.shuliang{width: 300px;height: 36px;position: relative;left: 56px;top: 76px;}
+.shuliang input[type=text]{width: 46px;height: 30px;border: 1px solid #cccccc;float: left;margin-right: 6px;}
+.shuliang span{width: 14px;height: 14px;text-align: center;line-height: 14px;display: block;border: 1px solid #cccccc;float: left;}
+#add,#sub{cursor:pointer}
+#boxBotton{height: 80px;width:1200px;margin-top: 15px;position: absolute;bottom: 12px;}
+#boxBotton_l{width: 370px;height: 80px;margin-right: 100px;float: left;position: relative;left: 140px;}
+#boxBotton_l img{width: 80px;height: 80px;margin-top: 0px;}
+.active{border: 1px solid red;}
+.guige ul li.active2{border: 1px solid red;}
+
+#boxBotton_r{margin-left: 120px;margin-top: 18px;width: 450px;height: 80px;float: left;}
+#boxBotton_r input[type=button]{width: 150px;height: 46px;font-size: 16px;}
+#goumai{background: #ffebec;color: red;border: 1px solid #b45666;cursor:pointer}
+#gwc{background: red;color: white;border: none;cursor:pointer}
+#boxBotton_r a{color: black;}
+#boxBotton_r a:hover{color: red;}
+/*添加购物车成功*/
+#addSuccess{width: 340px;height: 106px;border: 1px solid red;background: #fff;position: absolute;left: 670px;top: 630px;display: none;}
+.addSuccessOne{width: 320px;height: 40px;margin-top: 8px;margin-left: 20px;position: relative;font-size: 14px;}
+.addSuccessOne img{position: relative;top: 4px;}
+.addSuccessTwo{width: 320px;height: 60px;margin-top: 20px;margin-left: 20px;}
+#check{width:60px ;height:29px ;background: red;color: white;border:none; border-radius:1px}
+#continue{width:70px ;height:29px ;border: 1px solid #b55765;border-radius: 1px;background: #ffe8e9;color: #d47438;}
+
+
+
